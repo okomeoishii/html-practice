@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>初めてのページ</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<h1>こんにちは！</h1>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">My Site</div>
+    <nav class="nav">
+      <a href="#todo">やること</a>
+      <a href="#schedule">スケジュール</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="box">
+    <h2>お知らせ</h2>
+    <p>このサイトは現在練習中です！</p>
+
+    <p>
+    これはマスターの最初のHTMLページです。対戦よろしくお願いします<br>
+    ノイマンから量子コンピュータまで追いついてみせます、ほな。
+    </p>
+    <img src="cat.png" alt="かわいいネコ" width="300">
+ <p><a href="https://www.google.com">Googleへ行く</a></p>
+</div>
+
+<section>
+
+ <h2>やることリスト</h2>
+ <ul>
+    <li>HTML/CSSの練習</li>
+    <li>休憩しつつコーヒー</li>
+    <li>猫と遊ぶ</li>
+ </ul>
+</section>
+
+<section>
+ <h2>勉強スケジュール</h2>
+ <ol>
+    <li>午前：HTML練習</li>
+    <li>午後：CSS練習</li>
+    <li>夜：タグ復習</li>
+ </ol>
+</section>
+
+<section>
+    <h2>成績表</h2>
+    <div class="table-wrap">
+        <table>
+            <tr><th>科目</th><th>点数</th></tr>
+            <tr><td>HTML</td><td>80</td></tr>
+            <tr><td>CSS</td><td>90</td></tr>
+        </table>
+    </div>
+</section>
+
+<section class="feature">
+        <div class="feature__item">
+        <img src="cat.png" alt="ねこ">
+        <h3>にゃんポイント</h3>
+        <p>かわいい。最高。</p>
+    </div>
+    <div class="feature__item">
+        <img src="cat.png" alt="ねこ">
+        <h3>もふもふ度</h3>
+        <p>触るとしあわせ。</p>
+    </div>
+</section>
+
+<section>
+ <h2>お問い合わせ</h2>
+    <form action="#" method="post">
+        <label>名前：<input type="text" name="name"></label><br><br>
+        <label>メール：<input type="email" name="email"></label><br><br>
+        <label>メッセージ：<br>
+            <textarea name="message" rows="5" cols="40"></textarea>
+        </label><br><br>
+        <input type="submit" value="送信">
+    </form>
+</section>  
+
+</body>
+</html>
