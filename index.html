@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>初めてのページ</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta charset="UTF-8" />
+  <title>初めてのページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>こんにちは！</h1>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="logo">My Site</div>
-    <nav class="nav">
-      <a href="#todo">やること</a>
-      <a href="#schedule">スケジュール</a>
-      <a href="#contact">お問い合わせ</a>
-    </nav>
-  </div>
-</header>
-
-<div class="box">
-    <h2>お知らせ</h2>
-    <p>このサイトは現在練習中です！</p>
-
-    <p>
-    これはマスターの最初のHTMLページです。対戦よろしくお願いします<br>
-    ノイマンから量子コンピュータまで追いついてみせます、ほな。
-    </p>
-    <img src="cat.png" alt="かわいいネコ" width="300">
- <p><a href="https://www.google.com">Googleへ行く</a></p>
-</div>
-
-<section>
-
- <h2>やることリスト</h2>
- <ul>
-    <li>HTML/CSSの練習</li>
-    <li>休憩しつつコーヒー</li>
-    <li>猫と遊ぶ</li>
- </ul>
-</section>
-
-<section>
- <h2>勉強スケジュール</h2>
- <ol>
-    <li>午前：HTML練習</li>
-    <li>午後：CSS練習</li>
-    <li>夜：タグ復習</li>
- </ol>
-</section>
-
-<section>
-    <h2>成績表</h2>
-    <div class="table-wrap">
-        <table>
-            <tr><th>科目</th><th>点数</th></tr>
-            <tr><td>HTML</td><td>80</td></tr>
-            <tr><td>CSS</td><td>90</td></tr>
-        </table>
+  <!-- ヘッダー：最上部に置くのが一般的 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">My Site</div>
+      <nav class="nav">
+        <a href="#todo">やること</a>
+        <a href="#schedule">スケジュール</a>
+        <a href="#grades">成績表</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
     </div>
-</section>
+  </header>
 
-<section class="feature">
-        <div class="feature__item">
+  <main class="container">
+    <!-- ヒーロー -->
+    <section class="hero">
+      <h1>こんにちは！</h1>
+      <p class="hero__lead">最初のレスポンシブサイト、世界デビュー🎉</p>
+      <div class="hero__actions">
+        <a class="btn" href="#contact">お問い合わせへ</a>
+        <a class="btn btn--ghost" href="#todo">やることを見る</a>
+      </div>
+    </section>
+
+    <!-- お知らせ -->
+    <section class="box">
+      <h2>お知らせ</h2>
+      <p>このサイトは現在練習中です！</p>
+      <p>
+        これはマスターの最初のHTMLページです。対戦よろしくお願いします。<br>
+        ノイマンから量子コンピュータまで追いついてみせます、ほな。
+      </p>
+      <img src="cat.png" alt="かわいいネコ">
+      <p><a class="btn" href="https://www.google.com" target="_blank" rel="noopener">Googleへ行く</a></p>
+    </section>
+
+    <!-- 特徴カード -->
+    <section class="feature" aria-labelledby="feature-title">
+      <h2 id="feature-title">特徴</h2>
+      <div class="feature__item">
         <img src="cat.png" alt="ねこ">
         <h3>にゃんポイント</h3>
         <p>かわいい。最高。</p>
-    </div>
-    <div class="feature__item">
+      </div>
+      <div class="feature__item">
         <img src="cat.png" alt="ねこ">
         <h3>もふもふ度</h3>
         <p>触るとしあわせ。</p>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section>
- <h2>お問い合わせ</h2>
-    <form action="#" method="post">
-        <label>名前：<input type="text" name="name"></label><br><br>
-        <label>メール：<input type="email" name="email"></label><br><br>
-        <label>メッセージ：<br>
-            <textarea name="message" rows="5" cols="40"></textarea>
-        </label><br><br>
+    <!-- やること -->
+    <section id="todo">
+      <h2>やることリスト</h2>
+      <ul>
+        <li>HTML/CSSの練習</li>
+        <li>休憩しつつコーヒー</li>
+        <li>猫と遊ぶ</li>
+      </ul>
+    </section>
+
+    <!-- スケジュール -->
+    <section id="schedule">
+      <h2>勉強スケジュール</h2>
+      <ol>
+        <li>午前：HTML練習</li>
+        <li>午後：CSS練習</li>
+        <li>夜：タグ復習</li>
+      </ol>
+    </section>
+
+    <!-- 成績表 -->
+    <section id="grades">
+      <h2>成績表</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>科目</th><th>点数</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>HTML</td><td>80</td></tr>
+            <tr><td>CSS</td><td>90</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <form action="#" method="post">
+        <label>名前：
+          <input type="text" name="name" placeholder="山田 太郎">
+        </label>
+        <label>メール：
+          <input type="email" name="email" placeholder="taro@example.com">
+        </label>
+        <label>メッセージ：
+          <textarea name="message" rows="5" placeholder="お問い合わせ内容をどうぞ"></textarea>
+        </label>
         <input type="submit" value="送信">
-    </form>
-</section>  
+      </form>
+    </section>
+  </main>
 
 </body>
 </html>
